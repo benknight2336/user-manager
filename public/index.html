@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User Manager</title>
+</head>
+
+<body>
+    <h1>User App</h1>
+    <a href="/User">
+        <h3>Get Users</h3>
+    </a>
+    <form action="/User/" method="POST">
+        <input type="text" id="firstName" placeholder="First Name...">
+        <input type="text" id="lastName" placeholder="Last Name...">
+        <input type="email" id="email" placeholder="Email...">
+        <input type="number" id="age" placeholder="Age...">
+        <input type="submit" value="Add User">
+    </form>
+    <form action="/delete" method="POST">
+        <input type="text" id="deleteById" placeholder="Enter user id...">
+        <input type="submit" value="Delete User">
+    </form>
+</body>
+
+</html>
