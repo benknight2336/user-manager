@@ -49,6 +49,7 @@ const createUser = (request, response) => {
   );
 };
 
+//database collection name
 const collectionName = "collectionUsers";
 const User = mongoose.model("MyUser", userSchema, collectionName); //User
 module.exports = {

@@ -24,13 +24,14 @@ app.post("/", (req, res) => {
 });
 
 //delete a User item
-app.post("/User/delete", (req, res) => {
-  const id = req.body.id;
+app.post("/delete", (req, res) => {
+  const id = req.body.userId;
   console.log(`id = ${id}`);
   repository
     .deleteById(id)
-    .then(ok => {
-      res.json(User);
+    .then(() => {
+      console.log("user was deleted!");
+      res.status(200).send("user was deleted!");
     })
     .catch(error => console.log(error));
 });
