@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
-const { pool } = require("../config");
+const { pool } = require("../config/config");
 
 const getUsers = (req, res) => {
   pool.query("SELECT * FROM book ORDER BY id ASC", (error, results) => {

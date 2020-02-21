@@ -35,4 +35,18 @@ app.post("/delete", (req, res) => {
     })
     .catch(error => console.log(error));
 });
+
+//find user by id
+app.post("/find", (req, res) => {
+  const id = req.body.userId;
+  console.log(`id = ${id}`);
+  repository
+    .findById(id)
+    .then(() => {
+      res.json(User);
+      console.log(`${id}`);
+      res.status(200).send("user was found!");
+    })
+    .catch(error => console.log(error));
+});
 module.exports = app;
