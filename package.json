@@ -1,5 +1,5 @@
 {
-  "name": "database",
+  "name": "user-manager",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -15,6 +15,7 @@
     "express": "^4.17.1",
     "mongodb": "^3.5.2",
     "mongoose": "^5.8.11",
+    "node": "^13.8.0",
     "pg": "^7.18.1"
   },
   "devDependencies": {
